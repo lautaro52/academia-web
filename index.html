@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <link rel="stylesheet" href="css/estilos-home.css">
+    <link href="https://file.myfontastic.com/hsUFs3Brzz4bCgW94Jc4gW/icons.css" rel="stylesheet">
+</head>
+<body>
+<!-----------------------------------------------Header-------------------------------------------->
+<header class="header">
+    <div class="contenedor">
+        <a class="menu__link" href="index.html"><h1 class="logo">Academia</h1></a>
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+            <ul class="menu">
+                <li><a class="menu__link" href="index.html">Inicio</a></li>
+                <li><a class="menu__link" href="#">Quienes somos</a></li>
+                <li><a class="menu__link" href="#">Contacto</a></li>
+                <li><a class="menu__link" href="#" onclick="abrir_Vent()">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-----------------------------------------------Ventana iniciar sesion-------------------------------------------->
+
+<div class="vent" id="vent">
+    <div class="cerrar" id="cerrar"><a href="#" onclick="cerrar_Vent()"><img src="img/cerrar.png"></a> </div>
+    <div class="titulo--vent"> Iniciar sesion como:</div>
+    <div class="secciones">
+        <a href="#" class="btn--secciones" >Alumno</a>
+        <a href="#" class="btn--secciones" onclick="cerrar_Vent(); abrir_login()">Docente</a>
+    </div>
+</div>
+<!----------------------------------------------Iniciar sesion-------------------------------------------->
+<div class="iniciar--secion" id="iniciar--secion">
+    <h1>Iniciar Sesion.</h1>
+    Usuario:
+    <input type="text"  placeholder="Nombre_legajo" >
+    Contraseña:
+    <input type="text"  placeholder="Ingrese contraseña" >
+    <input type="button" class="btn__secion" onclick="redirigir_docente()" value="Ingresar">
+    <a href="#" class="link__secion">¿Has olvidado tu usuario/contraseña?</a>
+
+</div>
+<!-----------------------------------------------Banner-------------------------------------------->
+
+<section class="banner">
+    <div class="banner-contenedor">
+        <h1>Bienvenido a Academia</h1>
+        <h6>Asegura tu futuro con nosotros.</h6>
+    </div>
+
+<!-----------------------------------------------Script js-------------------------------------------->
+
+</section>
+    <script src="js/menu.js"></script>
+</body>
+</html>
